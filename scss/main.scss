@@ -149,7 +149,11 @@ p {
 	background-position: center;
 
 	&__title {
-		padding: 20px 0;
+		margin-bottom: 40px;
+	}
+
+	&__subtitle {
+		margin-bottom: 40px;
 	}
 
 	&__content {
@@ -167,14 +171,6 @@ p {
 		}
 
 		z-index: 2;
-	}
-
-	&__title{
-		padding: 20px;
-	}
-
-	&__subtitle{
-		padding: 10px;
 	}
 
 	&__shadow {
@@ -206,17 +202,16 @@ p {
 	text-align: center;
 
 	&__box {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 
 	&__box-item {
-		width: 60%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		padding: 60px 30px;
+		box-shadow: 0 10px 20px -10px rgba(black, 0.2);
+
+
 		h3 {
 			font-size: 1.4em;
 		}
@@ -289,9 +284,9 @@ p {
 				bottom: 30px;
 				right: 30px;
 				font-size: 18px;
-				
+
 				white-space: nowrap;
-				
+
 				i {
 					margin-right: 30px;
 				}
@@ -448,10 +443,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-	.about-me__box-item {
-		width: 50%;
-	}
-
 	.services {
 
 
@@ -477,7 +468,7 @@ footer {
 		}
 	}
 	.section-heading {
-		font-size: 30px;
+		font-size: 46px;
 		padding: 1em;
 		color: $main-color;
 	}
@@ -579,15 +570,16 @@ footer {
 
 	.about-me {
 		padding: 3em 3em 0;
+
 		&__box {
 			text-align: center;
 		}
 
 		.inner-heading {
-			font-size: 24px;
+			font-size: 36px;
 		}
 
-		.about-me__box-item {
+		&__box-item {
 			width: auto;
 			p {
 				padding: 10px 10px 0;
@@ -603,15 +595,12 @@ footer {
 			}
 		}
 
-		.about-me__description {
+		&__description {
 			display: flex;
 		}
 
-		.about-me__description-img {
+		&__description-img {
 			max-width: 50%;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
 
 			img {
 				max-height: 100%;
@@ -619,23 +608,14 @@ footer {
 			}
 		}
 
-		.about-me__description-text {
+		&__description-text {
 			width: 50%;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-			align-items: center;
-
-			h2 {
-				font-size: 20px;
-				color: #0061a0;
-			}
 
 			p {
 				text-align: justify;
-				font-size: 18px;
-				line-height: 20px;
-				padding: 10px;
+				font-size: 24px;
+				line-height: 1.5em;
+				padding: 40px;
 			}
 		}
 	}
