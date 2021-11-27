@@ -196,6 +196,14 @@ p {
   margin: 1em;
 }
 
+.header__title {
+  padding: 20px;
+}
+
+.header__subtitle {
+  padding: 10px;
+}
+
 .header__shadow {
   position: absolute;
   top: 0;
@@ -211,6 +219,10 @@ p {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 30px;
   z-index: 3;
 }
 

@@ -167,6 +167,14 @@ p {
 		z-index: 2;
 	}
 
+	&__title{
+		padding: 20px;
+	}
+
+	&__subtitle{
+		padding: 10px;
+	}
+
 	&__shadow {
 		position: absolute;
 		top: 0;
@@ -181,6 +189,10 @@ p {
 		bottom: 50px;
 		left: 50%;
 		transform: translateX(-50%);
+		background: none;
+		color: #fff;
+		border: none;
+		font-size: 30px;
 		z-index: 3;
 	}
 }
