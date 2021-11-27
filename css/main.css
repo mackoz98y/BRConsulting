@@ -236,16 +236,19 @@ p {
   height: 100%;
   border-radius: 8px;
   background-size: cover;
-  transition: transform 1s, opacity 1s;
+  background-position: center;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
 }
 .services__card-img-title {
-  font-size: 28px;
+  font-size: 26px;
 }
 .services__card-img-info {
   position: absolute;
   bottom: 30px;
   right: 30px;
   font-size: 18px;
+  white-space: nowrap;
 }
 .services__card-img-info i {
   margin-right: 30px;
@@ -642,7 +645,6 @@ footer {
   .services__card {
     margin: 1em;
     width: 23%;
-    white-space: nowrap;
   }
 }
 
