@@ -263,10 +263,11 @@ p {
 			height: 100%;
 			border-radius: 8px;
 			background-size: cover;
+			background-position: center;
 			transition: transform 1s, opacity 1s;
 
 			&-title {
-				font-size: 28px;
+				font-size: 26px;
 			}
 
 			&-info {
@@ -274,7 +275,9 @@ p {
 				bottom: 30px;
 				right: 30px;
 				font-size: 18px;
-
+				
+				white-space: nowrap;
+				
 				i {
 					margin-right: 30px;
 				}
@@ -749,8 +752,6 @@ footer {
 		&__card {
 			margin: 1em;
 			width: 23%;
-
-			white-space: nowrap;
 		}
 	}
 }

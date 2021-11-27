@@ -1,0 +1,19 @@
+{
+	"workbench.colorTheme": "Night Rider",
+	"editor.formatOnSave": true,
+	"files.autoSave": "afterDelay",
+	"workbench.iconTheme": "helium-icon-theme",
+	"prettier.singleQuote": true,
+	"prettier.useTabs": true,
+	"liveSassCompile.settings.formats": [
+		// This is Default.
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "/css/"
+		}
+	],
+	"liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"liveServer.settings.donotVerifyTags": true
+}
