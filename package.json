@@ -1,0 +1,27 @@
+{
+  "name": "brconsulting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run sass\" \"npm run server\"",
+    "sass": "sass --watch scss:css",
+    "server": "live-server --watch=. --open=."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackoz98y/BRConsulting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mackoz98y/BRConsulting/issues"
+  },
+  "homepage": "https://github.com/mackoz98y/BRConsulting#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "live-server": "^1.2.1",
+    "sass": "^1.43.5"
+  }
+}
