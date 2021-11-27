@@ -2,11 +2,11 @@
   "name": "brconsulting",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "concurrently --kill-others \"npm run sass\" \"npm run server\"",
     "sass": "sass --watch scss:css",
-    "server": "live-server --watch=. --open=."
+    "server": "live-server --watch=. --open=. --port=3000"
   },
   "repository": {
     "type": "git",

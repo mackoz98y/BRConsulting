@@ -67,6 +67,7 @@ a {
   font-size: 20px;
   text-align: center;
   padding: 1em;
+  margin-top: 60px;
 }
 
 p {
@@ -141,7 +142,10 @@ p {
   background-position: center;
 }
 .header__title {
-  padding: 20px 0;
+  margin-bottom: 40px;
+}
+.header__subtitle {
+  margin-bottom: 40px;
 }
 .header__content {
   position: relative;
@@ -157,18 +161,6 @@ p {
 .header__content .cta {
   margin: 1em;
 }
-<<<<<<< HEAD
-
-.header__title {
-  padding: 20px;
-}
-
-.header__subtitle {
-  padding: 10px;
-}
-
-=======
->>>>>>> 6397de6f2f3b73b2b3ba04883e4c101f9a40af80
 .header__shadow {
   position: absolute;
   top: 0;
@@ -181,16 +173,11 @@ p {
   position: absolute;
   bottom: 50px;
   left: 50%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background: none;
   color: #fff;
   border: none;
   font-size: 30px;
-=======
-  transform: translateX(-50%);
->>>>>>> 6397de6f2f3b73b2b3ba04883e4c101f9a40af80
   z-index: 3;
 }
 
@@ -201,16 +188,13 @@ p {
   font-size: 20px;
 }
 .about-me__box {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .about-me__box-item {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 60px 30px;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
 }
 .about-me__box-item h3 {
   font-size: 1.4em;
@@ -258,8 +242,7 @@ p {
   border-radius: 8px;
   background-size: cover;
   background-position: center;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
 }
 .services__card-img-title {
   font-size: 26px;
@@ -401,10 +384,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .about-me__box-item {
-    width: 50%;
-  }
-
   .services__cards {
     display: flex;
     justify-content: center;
@@ -417,14 +396,14 @@ footer {
 }
 @media (min-width: 992px) {
   section {
-    margin-top: 150px;
+    margin-top: 100px;
   }
   section:first-child {
     margin-top: 0;
   }
 
   .section-heading {
-    font-size: 30px;
+    font-size: 46px;
     padding: 1em;
     color: #71A2F7;
   }
@@ -515,50 +494,39 @@ footer {
     text-align: center;
   }
   .about-me .inner-heading {
-    font-size: 24px;
+    font-size: 36px;
   }
-  .about-me .about-me__box-item {
+  .about-me__box-item {
     width: auto;
   }
-  .about-me .about-me__box-item p {
+  .about-me__box-item p {
     padding: 10px 10px 0;
   }
-  .about-me .about-me__box-item h3 {
+  .about-me__box-item h3 {
     font-size: 20px;
     padding: 10px;
   }
-  .about-me .about-me__box-item .fas {
+  .about-me__box-item .fas {
     font-size: 40px;
   }
-  .about-me .about-me__description {
+  .about-me__description {
     display: flex;
   }
-  .about-me .about-me__description-img {
+  .about-me__description-img {
     max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
   }
-  .about-me .about-me__description-img img {
+  .about-me__description-img img {
     max-height: 100%;
     max-width: 100%;
   }
-  .about-me .about-me__description-text {
+  .about-me__description-text {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
   }
-  .about-me .about-me__description-text h2 {
-    font-size: 20px;
-    color: #0061a0;
-  }
-  .about-me .about-me__description-text p {
+  .about-me__description-text p {
     text-align: justify;
-    font-size: 18px;
-    line-height: 20px;
-    padding: 10px;
+    font-size: 24px;
+    line-height: 1.5em;
+    padding: 40px;
   }
 
   .references__item-container {
